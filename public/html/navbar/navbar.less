@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700italic);
+
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.logo {
+  vertical-align: middle;
+  position: absolute;
+  height: 40px;
+}
+
+.semicircle {
+  width: 70px;
+  height: 40px;
+  display: inline-block;
+  box-shadow: inset 3px -2px @MiddleBlue;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  background: repeating-linear-gradient(180deg, @LightBlue, @LightBlue 6%, @MiddleBlue 10%);
+}
+
+.logo-text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border-bottom: 2px solid @MiddleBlue;
+  color: black;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 100%;
+  font-size: 1.7em;
+  line-height: 1.1;
+  padding-left: 5px;
+  top: 0;
+}
+
+.nav-pills > li.active > a {
+  color: #fff;
+  background-color: @MiddleBlue;
+  border-radius: 4px;
+}

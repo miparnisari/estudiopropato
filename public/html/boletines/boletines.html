@@ -1,0 +1,14 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <p class="lead">Boletines:</p>
+    <div ng-show="cargando">Cargando ... </div>
+    <ul ng-repeat="b in boletines" ng-show="!cargando">
+      <li class="boletin">
+        <a class="{{b.type}}" href="{{b.link}}">{{b.title}}</a>
+      </li>
+    </ul>
+    <p ng-if="error.length">
+      {{error}}
+    </p>
+  </div>
+</header>

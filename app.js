@@ -1,0 +1,35 @@
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+
+var boletines = require('./routes/boletines');
+var contacto = require('./routes/contacto');
+
+var app = express();
+
+var env = process.env.NODE_ENV || 'development';
+app.locals.ENV = env;
+
+// app.use(favicon(__dirname + '/public/img/favicon.ico'));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/api/boletines', boletines);
+app.use('/api/contacto', contacto);
+
+/// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+    var err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+});
+
+module.exports = app;

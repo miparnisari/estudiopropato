@@ -1,0 +1,61 @@
+@import '../bower_components/bootstrap/less/bootstrap.less';
+@import '../bower_components/font-awesome/less/font-awesome.less';
+
+@icon-font-path: '../bower_components/bootstrap/fonts/';
+@fa-font-path: '../bower_components/font-awesome/fonts';
+
+@Blue: #537AA5;
+@MiddleBlue:  #5598EA;
+@LightBlue: #B5CCE1;
+
+/**
+ * App-wide Styles
+ */
+ 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.hero-unit {
+  min-height: 400px;
+  border-bottom: none;
+  margin-top: -20px;
+  position: relative;
+  padding: 30px 15px;
+  color: #F5F5F5;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  
+  .background;
+}
+
+.background {
+  background-image: url('../img/city.jpg');
+  background-size: cover;
+  height: 800px;
+  opacity: 0.7;
+}
+
+.shadowed {
+  -webkit-box-shadow: 3px 3px 53px 10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 53px 10px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 53px 10px rgba(0,0,0,0.75);
+}
+
+.spacer {
+  height: 15px;
+}
+
+@import '../html/boletines/boletines';
+@import '../html/contacto/contacto';
+@import '../html/footer/footer';
+@import '../html/home/home';
+@import '../html/navbar/navbar';
+@import '../html/servicios/servicios';
