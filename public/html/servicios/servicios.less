@@ -1,7 +1,7 @@
 .boxes {
   display:flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: flex-start;
@@ -12,8 +12,7 @@
   border-radius: 10px;
   background-color: white;
   text-align: center;
-  min-width: 300px;
-  min-height: 350px;
+  min-width: 400px;
   margin: 15px;
   padding: 10px;
   flex-grow: 0;
@@ -21,4 +20,14 @@
   flex-basis: 0;
   
   .shadowed;
+  
+  h3 {
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+  }
+  
+  p:not(:last-child) {
+    padding-bottom: 4px;
+    border-bottom: 1px solid lightgray;
+  }
 }

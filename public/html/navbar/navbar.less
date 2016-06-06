@@ -13,32 +13,43 @@
   vertical-align: middle;
   position: absolute;
   height: 40px;
+  
+  .logo-semicircle {
+    width: 70px;
+    height: 40px;
+    display: inline-block;
+    box-shadow: inset 3px -2px @MiddleBlue;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    background: repeating-linear-gradient(180deg, @LightBlue, @LightBlue 6%, @MiddleBlue 10%);
+    
+    @media @smartphones, @tablets {
+      display: none;
+    }
+  }
+
+  .logo-text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    border-bottom: 2px solid @MiddleBlue;
+    color: black;
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 100%;
+    font-size: 1.6em;
+    line-height: 1.1;
+    padding-left: 5px;
+    top: 0;
+    
+    @media @smartphones, @tablets {
+      font-size: 1.3em;
+      border-bottom: none;
+    }
+  }
 }
 
-.semicircle {
-  width: 70px;
-  height: 40px;
-  display: inline-block;
-  box-shadow: inset 3px -2px @MiddleBlue;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  background: repeating-linear-gradient(180deg, @LightBlue, @LightBlue 6%, @MiddleBlue 10%);
-}
 
-.logo-text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: inline-block;
-  border-bottom: 2px solid @MiddleBlue;
-  color: black;
-  position: absolute;
-  width: 300px;
-  height: 40px;
-  left: 100%;
-  font-size: 1.7em;
-  line-height: 1.1;
-  padding-left: 5px;
-  top: 0;
-}
 
 .nav-pills > li.active > a {
   color: #fff;

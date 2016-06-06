@@ -8,6 +8,13 @@
 @MiddleBlue:  #5598EA;
 @LightBlue: #B5CCE1;
 
+@smartphones: ~"only screen and (max-width: 479px)";
+@tablets: ~"only screen and (min-width: 768px) and max-width: 959px)";
+
+@font-size-large: 20px;
+@font-size-normal: 14px;
+
+
 /**
  * App-wide Styles
  */
@@ -39,8 +46,12 @@
 .background {
   background-image: url('../img/city.jpg');
   background-size: cover;
-  height: 800px;
+  min-height: 800px;
   opacity: 0.7;
+}
+
+.lead {
+  font-size: @font-size-large;
 }
 
 .shadowed {

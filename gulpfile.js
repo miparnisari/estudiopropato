@@ -13,7 +13,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./public/css/*.less', ['less']);
+  gulp.watch(['./public/css/*.less', './public/html/**/*.less', ], ['less']);
 });
 
 gulp.task('develop', function () {
