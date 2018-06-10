@@ -31,9 +31,10 @@ router.post('/', function (req, res) {
       if(error){
           console.log(error);
           res.sendStatus(500);
+      } else {
+        console.log('Mensaje enviado: ' + info);
+        res.sendStatus(200);
       }
-      console.log('Mensaje enviado: ' + info);
-      res.sendStatus(200);
   });
 });
 
