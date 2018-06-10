@@ -32,7 +32,7 @@ router.post('/', function (req, res) {
           console.log(error);
           res.sendStatus(500);
       }
-      console.log('Mensaje enviado: ' + info.response);
+      console.log('Mensaje enviado: ' + info);
       res.sendStatus(200);
   });
 });
