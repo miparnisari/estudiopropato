@@ -8,6 +8,10 @@ router.get('/', function (req, res) {
     title: 'Boletín Junio 2018',
     type: 'pdf',
     link: 'boletines/junio2018.pdf'
+  }, {
+    title: 'Boletín Noviembre 2018',
+    type: 'pdf',
+    link: 'boletines/noviembre2018.pdf'
   }
 ];
   
