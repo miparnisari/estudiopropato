@@ -5,13 +5,13 @@ var router = express.Router();
 
 router.get('/', function (req, res) {
   var results = [ {
-    title: 'Boletín Junio 2018',
+    title: 'Boletín Agosto 2019',
     type: 'pdf',
-    link: 'boletines/junio2018.pdf'
+    link: 'boletines/agosto2019.pdf'
   }, {
-    title: 'Boletín Noviembre 2018',
+    title: 'Boletín Septiembre 2019',
     type: 'pdf',
-    link: 'boletines/noviembre2018.pdf'
+    link: 'boletines/septiembre2019.pdf'
   }
 ];
   
