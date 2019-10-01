@@ -4,12 +4,13 @@ var gulp = require('gulp'),
   livereload = require('gulp-livereload'),
   less = require('gulp-less');
 
-gulp.task('less', function () {
+gulp.task('less', function (done) {
   gulp.src('./public/css/*.less')
     .pipe(plumber())
     .pipe(less())
     .pipe(gulp.dest('./public/css'))
     .pipe(livereload());
+    done();
 });
 
 gulp.task('watch', function() {
@@ -33,8 +34,10 @@ gulp.task('develop', function () {
   });
 });
 
-gulp.task('default', [
+gulp.task('default', gulp.series(
   'less',
   'develop',
   'watch'
-]);
+), function(done) {
+  done();
+});
