@@ -22,6 +22,7 @@ En la carpeta donde se descargó el proyecto:
 
 Cuando el cambio este listo para subirse la pagina:
 
+1. `git commit -a -m "resumen del cambio"`
 1. `git push origin/cambios`.
 1. Crear un "pull request" (un pedido de actualizacion): https://help.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
