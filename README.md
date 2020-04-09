@@ -22,8 +22,8 @@ En la carpeta donde se descargó el proyecto:
 
 Cuando el cambio este listo para subirse la pagina:
 
-1. `git commit -a -m "resumen del cambio"`
-1. `git push origin/cambios`.
-1. Crear un "pull request" (un pedido de actualizacion): https://help.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+1. En la linea de comando, correr `git commit -a -m "resumen del cambio"`
+1. En la linea de comando, correr `git push origin/cambios`.
+1. Crear un "pull request" (un pedido de actualización): https://help.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
-Una vez que el cambio este aprobado se va a enviar automaticamente a produccion.
+Una vez que el cambio este aprobado se va a enviar automaticamente a producción.
